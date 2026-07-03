@@ -307,7 +307,7 @@ function renderChart() {
       : `<span class="bar-val-outside" style="left:calc(${pct}% + 8px)">${val.toFixed(1)}%</span>`;
     const div = i===9 ? '<hr class="chart-divider">' : '';
     return `${div}<div class="bar-row">
-      <span class="team-name">${d.flag} ${d.team}</span>
+      <span class="team-name">${d.team}</span>
       <div class="bar-track">
         <div class="bar-fill" style="width:${pct}%;background:${color}"></div>
         ${valHtml}
